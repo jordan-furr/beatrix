@@ -688,7 +688,7 @@ header {
 }
 
 .swan {
-  width: 60vw;
+  width: 50vw;
 }
 
 
@@ -722,6 +722,11 @@ header {
 .detail {
   font-size: 14px;
 }
+
+.postPageTitle {
+  font-weight: bold;
+}
+
 
 
 /*Menu*/

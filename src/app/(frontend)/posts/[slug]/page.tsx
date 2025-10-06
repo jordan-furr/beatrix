@@ -5,6 +5,7 @@ import Link from "next/link";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import { PortableText } from "next-sanity";
+import { PublishedAt } from "@/components/publishedAt";
 
 export default async function Page({
     params,
@@ -43,7 +44,8 @@ export default async function Page({
                     }}
                 />
             ) : null}
-            <p className="mb3">{post?.title}</p>
+            <p className="mb1 postPageTitle">{post?.title}</p>
+            <PublishedAt publishedAt={post?.publishedAt} />
             <p className="mb6">{post?.body ? (
                 <div className="prose">
                     <PortableText value={post.body} />

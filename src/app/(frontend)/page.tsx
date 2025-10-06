@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <div className="home">
-        <p className="mb3">Documenting my experience studying bread and working in bakeries. currently in Rouen, France.</p>
+        <p className="mb3">Documenting studying bread and working in bakeries. currently in Rouen, France.</p>
 
         <Link href={"/posts"}>
           <p className="titleLink">Read the latest</p>
