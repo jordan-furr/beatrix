@@ -723,10 +723,6 @@ header {
   font-size: 14px;
 }
 
-.postPageTitle {
-  font-weight: bold;
-}
-
 
 
 /*Menu*/
@@ -763,6 +759,17 @@ border-bottom:#888888 .5px solid;
 
 .prose li {
   margin-left: 1rem;
+}
+
+.postPageTitle {
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.date {
+  color: #888888;
+  padding-top: .25rem;
 }
 
 
