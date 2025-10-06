@@ -6,7 +6,7 @@ export function Header() {
     return (
         <div>
             <header>
-                <div className="flex-col align-center ">
+                <div className="flex-col align-center headerCont">
                     <Link href={"/"}>
                         <div className="swan">
                             <Image
@@ -18,7 +18,6 @@ export function Header() {
                             />
                         </div>
                     </Link>
-
                     <Link href={"/"}>
                         <p className="beatrix">Beatrix Furr</p>
                     </Link>
