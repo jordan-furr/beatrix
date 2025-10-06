@@ -11,7 +11,7 @@ export default function Home() {
         <Link href={"/posts"}>
           <p className="titleLink">Read the latest</p>
         </Link>
-        <div className="w-100">
+        <div className="w-100 ferrandiCont">
           <Image
             src={"/ferrandi.jpg"}
             alt="beatrix at ferrandi"

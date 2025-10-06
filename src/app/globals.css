@@ -688,7 +688,7 @@ header {
 }
 
 .swan {
-  width: 75vw;
+  width: 60vw;
 }
 
 
@@ -745,6 +745,7 @@ header {
 }
 
 .postCont {
+  max-width: fit-content;
 border-bottom:#888888 .5px solid;
 }
 
@@ -755,6 +756,35 @@ border-bottom:#888888 .5px solid;
   font-style: italic;
 }
 
-.menuPage li {
+.prose li {
   margin-left: 1rem;
+}
+
+
+
+@media (min-width: 640px) {
+
+  .headerCont {
+    width: 100%;
+  }
+
+  .swan {
+    width: 200px
+  }
+
+  .home, .menuPage {
+    width: 66%;
+    margin: auto;
+  }
+
+}
+
+@media (min-width: 940px) {
+
+  .home, .menuPage {
+    width: 33%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
 }
