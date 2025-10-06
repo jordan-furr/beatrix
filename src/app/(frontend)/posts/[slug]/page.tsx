@@ -29,11 +29,12 @@ export default async function Page({
                         .width(300)
                         .height(300)
                         .quality(80)
+
                         .auto("format")
                         .url()}
                     alt={post?.mainImage?.alt || ""}
-                    width={0}
-                    height={0}
+                    width={300}
+                    height={300}
                     sizes="100vw"
                     style={{
                         width: '100%',
@@ -48,7 +49,7 @@ export default async function Page({
                     <PortableText value={post.body} />
                 </div>
             ) : null}</p>
-            <Link href="/posts">&larr; Return to menu</Link>
+            <Link href="/posts" className="detail">&larr; Return to blog</Link>
         </main>
     );
 }

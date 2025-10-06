@@ -25,7 +25,7 @@ export default async function Page() {
                     </li>
                 ))}
             </ul>
-            <Link href="/">&larr; Return home</Link>
+            <Link href="/" className="detail">&larr; Return home</Link>
         </main>
     );
 }
