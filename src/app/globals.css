@@ -682,13 +682,13 @@ header {
 .beatrix {
   font-size: 2.5rem;
   line-height: 1;
-  font-family: 'Times New Roman', Times, serif;
-  letter-spacing: 5;
-  padding-top: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: .1rem;
+  padding-top: 1.25rem;
 }
 
 .swan {
-  width: 66vw;
+  width: 75vw;
 }
 
 
@@ -698,17 +698,16 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 2rem;
   text-align: center;
 }
 
 .titleLink {
-  font-size: 1.25rem;
-  font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
   color: rgb(0, 136, 255);
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   text-decoration: underline;
   text-underline-offset: 5px;
+  font-style: italic; 
 }
 
 
@@ -720,6 +719,10 @@ header {
   border-radius: 8;
 }
 
+.detail {
+  font-size: 14px;
+}
+
 
 /*Menu*/
 
@@ -728,7 +731,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .menuCont {
@@ -737,11 +740,8 @@ header {
 }
 
 .sectionTitle {
-  font-size: 1.25rem;
-  font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
-  color: rgb(0, 136, 255);
   margin-bottom: 1.25rem;
+  color: rgb(0, 136, 255);
 }
 
 .postCont {
@@ -749,11 +749,12 @@ border-bottom:#888888 .5px solid;
 }
 
 .postTitle {
-  padding: 16px;
+  padding: .75rem;
+  padding-left: 0;
   width: fit-content;
+  font-style: italic;
 }
 
-li {
-  margin-left: 18px;
+.menuPage li {
+  margin-left: 1rem;
 }
-
