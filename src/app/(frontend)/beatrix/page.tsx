@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <div className="home">
 
-         <p className="mb3">I'm Beatrix.</p>
+         <p className="mb3">I&apos;m Beatrix.</p>
          <Link href={"/"}>
           <p className="titleLink">&larr; Back</p>
         </Link>
