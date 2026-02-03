@@ -6,6 +6,7 @@ import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import { PortableText } from "next-sanity";
 import { PublishedAt } from "@/components/publishedAt";
+import { components } from "@/sanity/portableTextComponents";
 
 export default async function Page({
     params,
@@ -23,14 +24,15 @@ export default async function Page({
 
     return (
         <main className="menuPage">
+            <p className="postPageTitle">{post?.title}</p>
+            <PublishedAt publishedAt={post?.publishedAt} />
             {post?.mainImage ? (
                 <Image
                     className="mb3"
                     src={urlFor(post.mainImage)
-                        .width(300)
-                        .height(300)
-                        .quality(80)
-
+                        .width(1000)
+                        .height(1000)
+                        .quality(90)
                         .auto("format")
                         .url()}
                     alt={post?.mainImage?.alt || ""}
@@ -44,13 +46,12 @@ export default async function Page({
                     }}
                 />
             ) : null}
-            <p className="mb1 postPageTitle">{post?.title}</p>
-            <PublishedAt publishedAt={post?.publishedAt} />
-            <p className="mb6">{post?.body ? (
-                <div className="prose">
-                    <PortableText value={post.body} />
+
+            {post?.body ? (
+                <div className="portableText mb5">
+                    <PortableText value={post.body} components={components} />
                 </div>
-            ) : null}</p>
+            ) : null}
             <Link href="/posts" className="detail">&larr; Return to blog</Link>
         </main>
     );

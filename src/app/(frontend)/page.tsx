@@ -6,12 +6,11 @@ export default function Home() {
   return (
     <main>
       <div className="home">
-        <p className="mb3">Documenting studying bread and working in bakeries. currently in Rouen, France.</p>
+        <p className="hero">To have a bakery is to believe in tomorrow</p>
+        {/* <p className="mb3">Documenting studying bread and working in bakeries. currently in Rouen, France.</p> */}
 
-        <Link href={"/posts"}>
-          <p className="titleLink">Read the latest</p>
-        </Link>
-        <div className="w-100 ferrandiCont">
+        
+        <div className="w-100">
           <Image
             src={"/ferrandi.jpg"}
             alt="beatrix at ferrandi"
@@ -19,7 +18,13 @@ export default function Home() {
             height={300}
             style={{ width: "100%", height: "auto" }}
           />
-          <p className="mt1 detail">Ferrandi, March 2024</p>
+          <Link href={"/posts"}>
+          <p className="titleLink">Notes from a baker &rarr;</p>
+        </Link>
+        <Link href={"/beatrix"}>
+          <p className="titleLink">Beatrix</p>
+        </Link>
+
         </div>
       </div>
     </main>

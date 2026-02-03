@@ -1,6 +1,6 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #321f1b;
+  --foreground: #ffffff;
 }
 
 html,
@@ -676,25 +676,76 @@ h6 {
 /*Header*/
 header {
   padding: 1.25rem;
-  border-bottom:#171717 .5px solid;
 }
 
 .beatrix {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 1;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: .1rem;
   padding-top: 1.25rem;
+  display: inline-block;
+  display: none;
 }
 
 .swan {
   width: 50vw;
+  display: inline-block;
+  padding-top: 1.5rem;
 }
+
+
+.portableText {
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.portableText p {
+  margin-bottom: 1.25rem;
+}
+
+.portableText h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.portableText h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+}
+
+.portableText ul,
+.portableText ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.portableText li {
+  margin-bottom: 0.5rem;
+}
+
+.portableText blockquote {
+  border-left: 3px solid #ffffff;
+  padding-left: 1rem;
+  font-style: italic;
+  margin: 2rem 0;
+}
+
+.portableText a {
+  text-decoration: underline;
+}
+
+
+
 
 
 /*Home*/
 .home {
-  padding: 2rem;
+  padding: 1.5rem;
+  padding-top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -703,11 +754,13 @@ header {
 }
 
 .titleLink {
-  color: rgb(0, 136, 255);
-  margin-bottom: 2rem;
+  color: white;
   text-decoration: underline;
   text-underline-offset: 5px;
   font-style: italic; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 1rem;
+  font-size: 1.11rem;
 }
 
 
@@ -722,6 +775,20 @@ header {
 .detail {
   font-size: 14px;
 }
+
+.hero {
+  font-size: 2.11rem;
+  letter-spacing: 33;
+  margin-bottom: 2.11rem;
+  line-height: 1;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: .1rem;
+}
+
+.headerCont {
+    align-items: center;
+    justify-content: center;
+  }
 
 
 
@@ -742,19 +809,23 @@ header {
 
 .sectionTitle {
   margin-bottom: 1.25rem;
-  color: rgb(0, 136, 255);
+  font-size: 1.11rem;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .postCont {
-  max-width: fit-content;
-border-bottom:#888888 .5px solid;
+  width: 100%;
+  border-bottom:#9ad8ff .5px solid;
 }
 
 .postTitle {
-  padding: .75rem;
-  padding-left: 0;
-  width: fit-content;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  width: max-content;
   font-style: italic;
+  
 }
 
 .prose li {
@@ -778,6 +849,15 @@ border-bottom:#888888 .5px solid;
 
   .headerCont {
     width: 100%;
+    flex-direction: row;
+    vertical-align: center;
+    align-items: center;
+  }
+
+  .beatrix {
+    font-size: 2.5rem;
+    padding-left: 2.5rem;
+    display: none;
   }
 
   .swan {
