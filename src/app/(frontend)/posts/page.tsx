@@ -9,7 +9,7 @@ export default async function Page() {
 
     return (
         <main className="menuPage">
-            <ul className="menuCont">
+            <ul className="menuCont w-100">
                 <p className="sectionTitle">Recent</p>
                 {posts.map((post) => (
                     <li key={post._id}>
