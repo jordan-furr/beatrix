@@ -709,7 +709,7 @@ header {
 .swan {
   width: 33vw;
   display: inline-block;
-  padding-top: 1.5rem;
+  padding-top: 0.75rem;
 }
 
 
@@ -814,7 +814,7 @@ header {
 .hero {
   font-size: 2.11rem;
   letter-spacing: 33;
-  margin-bottom: 2.11rem;
+  margin-bottom: 1.33rem;
   line-height: 1;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: .1rem;
@@ -935,7 +935,7 @@ header {
   .home,
   .menuPage {
     width: 33%;
-    padding-top: 133px;
+    padding-top: 150px;
   }
 
   header {
@@ -951,7 +951,10 @@ header {
     align-items: center;
   }
 
-
+  
+.swan {
+  padding-top: 1.5rem;
+}
   
 
 }
