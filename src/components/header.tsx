@@ -8,23 +8,23 @@ export function Header() {
             <header>
                 <div className="flex-col headerCont">
 
-                    <div className="swan">
+                    <div className="swan grow">
                         <Link href={"/"}>
-                        <Image
-                            src={"/swan-family.png"}
-                            alt="bread swan"
-                            width={300}
-                            height={300}
-                            style={{ width: "100%", height: "auto" }}
-                        />
-                    </Link>
-                </div>
+                            <Image
+                                src={"/swan-family.png"}
+                                alt="bread swan"
+                                width={300}
+                                height={300}
+                                style={{ width: "100%", height: "auto" }}
+                            />
+                        </Link>
+                    </div>
 
-                <div className="beatrix">
-                    <Link href={"/"}>
-                    <p >Beatrix Furr</p>  </Link>
+                    <div className="beatrix">
+                        <Link href={"/"}>
+                            <p >Beatrix Furr</p>  </Link>
+                    </div>
                 </div>
-                 </div>
             </header >
         </div >
     )

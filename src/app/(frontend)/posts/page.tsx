@@ -9,7 +9,7 @@ export default async function Page() {
     return (
         <main className="menuPage">
             <ul className="menuCont w-100">
-                <p className="sectionTitle">Recent</p>
+                <p className="sectionTitle">Notes</p>
                 {posts.map((post) => (
                     <li key={post._id}>
 
@@ -17,14 +17,14 @@ export default async function Page() {
                             href={`/posts/${post?.slug?.current}`}
                         >
                             <div className="postCont">
-                                <p className="postTitle">{post?.title}</p>    
+                                <p className="postTitle blueHov">{post?.title}</p>    
                             </div>
 
                         </Link>
                     </li>
                 ))}
             </ul>
-            <Link href="/" className="detail">&larr; Return home</Link>
+            <Link href="/" className="detail blueHov">&larr; Return home</Link>
         </main>
     );
 }
