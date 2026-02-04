@@ -40,7 +40,6 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 a {
@@ -904,7 +903,7 @@ header {
 
 .postWrapper {
   background-image: linear-gradient(white, #dacbbd);
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
   margin-bottom: 2rem;
 }
