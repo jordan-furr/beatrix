@@ -17,12 +17,13 @@ export default function Home() {
             width={300}
             height={300}
             style={{ width: "100%", height: "auto" }}
+            className="hover"
           />
           <Link href={"/posts"}>
-          <p className="titleLink">Notes from a baker &rarr;</p>
+          <p className="titleLink blueHov">Notes from a baker &rarr;</p>
         </Link>
         <Link href={"/beatrix"}>
-          <p className="titleLink">Beatrix</p>
+          <p className="titleLink blueHov mb3">Beatrix</p>
         </Link>
 
         </div>
